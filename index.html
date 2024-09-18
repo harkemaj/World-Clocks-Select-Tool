@@ -3,7 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/index.css" />
     <title>World Clocks Selector Tool</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1>World Clock</h1>
+
+      <select id="selector">
+        <option value="">Choose city</option>
+        <option value="Europe/Paris">Paris</option>
+      </select>
+      <div class="city">
+        <h2>LA</h2>
+        <div class="city-icon">🏳</div>
+      </div>
+      <div class="date">Sept. 18</div>
+      <div class="time">10 AM</div> <div class="city"></div>
+        <h2>Sydney</h2>
+        <div class="city-icon">🏳</div>
+      </div>
+      <div class="date">Sept. 18</div>
+      <div class="time">11 AM</div>
+    </div>
+    <footer class="footer">
+      This project was coded by Jennie Harkema and is
+      <a
+        href="https://github.com/harkemaj/World-Clocks-Select-Tool"
+        target="_blank"
+      >
+        open sourced on Github</a
+      >.
+    </footer>
+    <script src="src/index.jsx"></script>
+  </body>
 </html>
