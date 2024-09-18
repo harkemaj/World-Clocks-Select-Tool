@@ -23,6 +23,17 @@ function updateTime() {
     parisTimeElement.innerHTML = parisTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
+
+    // Mexico City
+    let mxElement = document.querySelector("#mexico-city");
+    if (mxElement) {
+      let mxDateElement = mxElement.querySelector(".date");
+      let mxTimeElement = mxElement.querySelector(".time");
+      let mxTime = moment().tz("America/Mexico_City");
+
+      mxDateElement.innerHTML = mxTime.format("MMMM	Do YYYY");
+      mxTimeElement.innerHTML = mxTime.format("h:mm:ss [<small>]A[</small>]");
+    }
   }
 }
 
